@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.certificate-wrapper{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.certificate{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #fdab00;
+    border-radius: 5px;
+}
+
+@media screen and (orientation: portrait){
+    .content{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+    }
+}
+
+.text{
+    font-size: 20px;
+    padding: 5%;
+}
+
+.main{
+    width: 100%;
+    font-size: 20px;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input[type=text] {
+    width: 160px;
+    box-sizing: border-box;
+    border: 2px solid #fdab00;
+    border-radius: 4px;
+    font-size: 16px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 10px;
+}
+
+input[type=text]:focus {
+    width: 40%;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor:pointer;
+  }
+  
+  .btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+
+  .yellow {
+    background-color: #f1c40f;
+    box-shadow: 0px 5px 0px 0px #D8AB00;
+  }
+  
+  .yellow:hover {
+    background-color: #FFDE29;
+  }
+
+  .red {
+    background-color: #e74c3c;
+    box-shadow: 0px 5px 0px 0px #CE3323;
+  }
+  
+  .red:hover {
+    background-color: #FF6656;
+  }
+
+  .branding{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .content p{
+      padding: 15px 0;
+  }
+  

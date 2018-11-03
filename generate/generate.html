@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="data.js"></script>
+</head>
+<body>
+
+    <script>
+        participants.map(participant=>{
+            fetch('https://safe-gorge-73245.herokuapp.com/serialize',{
+                    method:'post',
+                    headers:{'Content-Type':'application/json'},
+                    body: JSON.stringify({
+                        name: participant.name,
+                        email: participant.email
+                    })
+                })
+                .then(response => response.json())
+                .then(participant => {
+                    console.log(participant)
+            })
+})
+    </script>
+    
+</body>
+</html>
